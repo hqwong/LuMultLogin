@@ -38,8 +38,8 @@ jobs:
 
       - name: 🚀 运行续期脚本
         env:
-          LUNES_EMAIL: ${{ hqwong@gmail.com }}
-          LUNES_PASSWORD: ${{ 1qaz2WSX,./ }}
+          LUNES_EMAIL: ${{ secrets.LUNES_EMAIL }}
+          LUNES_PASSWORD: ${{ secrets.LUNES_PASSWORD }}
           LUNES_EMAIL1: ${{ secrets.LUNES_EMAIL1 }}       # 账号2（可选，不配则自动跳过）
           LUNES_PASSWORD1: ${{ secrets.LUNES_PASSWORD1 }} # 账号2 密码
           # 🆕 修改：NODE_LINK 支持多行节点（一行一个），直接在 secret 里换行填写。
